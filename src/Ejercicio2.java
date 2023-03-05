@@ -1,10 +1,14 @@
+import java.util.Scanner;
+
 public class Ejercicio2 {
 
     public static void main(String[] args) {
          double iva = 21;
 
-        double precioConIva = PrecioIva(50, iva );
-        System.out.println(precioConIva);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Introduce el Precio");
+        double precioConIva = PrecioIva( scanner.nextDouble(),iva);
+        System.out.println("Precio Con Iva " + precioConIva);
 
     }
     static double PrecioIva (double precio , double iva){
